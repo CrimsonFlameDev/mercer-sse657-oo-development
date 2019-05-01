@@ -1,0 +1,69 @@
+﻿<Window x:Class="RecipeHelper.GUI.EditRecipeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Recipe" Height="501" Width="605" Background="LemonChiffon"
+        ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="10,439,0,0"
+                VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="512,439,0,0"
+                VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="58,33,0,0"
+                 TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,33,0,0"
+               VerticalAlignment="Top" Width="43"/>
+        <GroupBox Header="Add Ingredients" HorizontalAlignment="Left" Margin="10,64,0,0"
+                  VerticalAlignment="Top" Height="190" Width="577">
+            <Grid HorizontalAlignment="Left" Height="157" Margin="10,10,-2,0"
+                  VerticalAlignment="Top" Width="557">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="238*"/>
+                    <ColumnDefinition Width="57*"/>
+                    <ColumnDefinition Width="262*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="=&gt;" Grid.Column="1" HorizontalAlignment="Left"
+                        Margin="10,61,0,0" VerticalAlignment="Top" Width="38" Height="22"/>
+                <ListBox Grid.Column="2" HorizontalAlignment="Left" Height="137"
+                         Margin="10,10,0,0" VerticalAlignment="Top" Width="242"/>
+                <Label Content="Quantity:" HorizontalAlignment="Left"
+                       VerticalAlignment="Top" Width="60" Height="26"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="65,2,0,0"
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"
+                         Width="71"/>
+                <Label Content="Units:" HorizontalAlignment="Left" Margin="0,61,0,0"
+                       VerticalAlignment="Top" Width="60" Height="26"/>
+                <ComboBox HorizontalAlignment="Left" Margin="65,61,0,0"
+                          VerticalAlignment="Top" Width="126" Height="22"/>
+                <Label Content="Name:" HorizontalAlignment="Left" Margin="0,121,0,0"
+                       VerticalAlignment="Top" Width="60" Height="26"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="65,123,0,0"
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"
+                         Width="140"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Cooking Steps" HorizontalAlignment="Left" Margin="10,259,0,0"
+                  VerticalAlignment="Top" Height="175" Width="577">
+            <Grid HorizontalAlignment="Left" Height="140" Margin="10,10,-2,0"
+                  VerticalAlignment="Top" Width="557">
+                <Label Content="Prep Time (minutes)" HorizontalAlignment="Left"
+                       Margin="410,10,0,0" VerticalAlignment="Top" Width="119"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="446,41,0,0"
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"
+                         Width="55"/>
+                <Label Content="Cook Time (minutes)" HorizontalAlignment="Left"
+                       Margin="410,76,0,0" VerticalAlignment="Top" Width="119"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="446,107,0,0"
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"
+                         Width="55"/>
+                <RichTextBox HorizontalAlignment="Left" Height="120" Margin="10,10,0,0"
+                             VerticalAlignment="Top" Width="323">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text="RichTextBox"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

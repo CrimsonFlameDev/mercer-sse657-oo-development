@@ -1,0 +1,29 @@
+﻿<Window x:Class="GameFactory.GUI.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sdk="clr-namespace:GameFactory.SDK;assembly=GameFactory.SDK"
+        Title="Game Factory" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="GameItemTemplate" DataType="sdk:IGame">
+            <TextBlock Text="{Binding Path=Title}"
+                       VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="buttonPlay"
+                Content="Play" Height="57" Width="140" Margin="344,241,0,0"
+                VerticalAlignment="Top" HorizontalAlignment="Left" IsEnabled="False"
+                Command="{Binding PlayGameCommand}"/>
+
+        <Button Content="Exit" HorizontalAlignment="Left" Height="57" Margin="36,241,0,0"
+                VerticalAlignment="Top" Width="140" IsEnabled="True"/>
+
+        <ComboBox x:Name="comboBoxGames" ItemsSource="{Binding Games}"
+                  ItemTemplate="{StaticResource GameItemTemplate}"
+                  VerticalAlignment="Top" HorizontalAlignment="Left"
+                  Height="32" Width="215" Margin="150,112,0,0"
+                  SelectionChanged="GameSelector_OnSelectionChanged"
+                  SelectedItem="{Binding SelectedGame}">
+        </ComboBox>
+    </Grid>
+</Window>

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFactory.GUI", "GameFactory.GUI\GameFactory.GUI.csproj", "{F3593570-FF1A-4769-8051-A22421A73E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFactory.Library", "GameFactory.Library\GameFactory.Library.csproj", "{F84E52A5-FCD7-4727-A653-2E1EF662AA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFactory.ViewModel", "GameFactory.ViewModel\GameFactory.ViewModel.csproj", "{2E868F55-41DD-4722-BC50-99B3CA7301D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFactory.Utilities", "GameFactory.Utilities\GameFactory.Utilities.csproj", "{C7E10258-F867-4DD7-89B4-1AF69C5E5874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFactory.SDK", "GameFactory.SDK\GameFactory.SDK.csproj", "{587DE7DB-BF97-4007-B9B5-187B8459F829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{A53698CD-4EAA-4B3E-982B-7C41335FFECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockGame01", "_Games\MockGame01\MockGame01.csproj", "{A4ED0FC9-64B3-40AA-B419-F0F4159D978A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3593570-FF1A-4769-8051-A22421A73E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3593570-FF1A-4769-8051-A22421A73E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3593570-FF1A-4769-8051-A22421A73E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3593570-FF1A-4769-8051-A22421A73E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84E52A5-FCD7-4727-A653-2E1EF662AA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84E52A5-FCD7-4727-A653-2E1EF662AA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84E52A5-FCD7-4727-A653-2E1EF662AA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84E52A5-FCD7-4727-A653-2E1EF662AA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E868F55-41DD-4722-BC50-99B3CA7301D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E868F55-41DD-4722-BC50-99B3CA7301D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E868F55-41DD-4722-BC50-99B3CA7301D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E868F55-41DD-4722-BC50-99B3CA7301D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E10258-F867-4DD7-89B4-1AF69C5E5874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E10258-F867-4DD7-89B4-1AF69C5E5874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E10258-F867-4DD7-89B4-1AF69C5E5874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E10258-F867-4DD7-89B4-1AF69C5E5874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587DE7DB-BF97-4007-B9B5-187B8459F829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587DE7DB-BF97-4007-B9B5-187B8459F829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587DE7DB-BF97-4007-B9B5-187B8459F829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587DE7DB-BF97-4007-B9B5-187B8459F829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4ED0FC9-64B3-40AA-B419-F0F4159D978A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4ED0FC9-64B3-40AA-B419-F0F4159D978A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4ED0FC9-64B3-40AA-B419-F0F4159D978A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4ED0FC9-64B3-40AA-B419-F0F4159D978A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4ED0FC9-64B3-40AA-B419-F0F4159D978A} = {A53698CD-4EAA-4B3E-982B-7C41335FFECE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal
